@@ -10,7 +10,7 @@ describe('test Button component', () => {
   it('should render the correct default button', () => {
     const wrapper = render(<Button {...defaultProps}>Nice</Button>)
     const element = wrapper.getByText('Nice') as HTMLButtonElement
-    expect(element.tagName).toEqual('BUTTON')
+    expect(element.tagName).toEqual('SPAN')
     fireEvent.click(element)
     expect(defaultProps.onClick).toHaveBeenCalled()
   })

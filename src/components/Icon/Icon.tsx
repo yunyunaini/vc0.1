@@ -6,7 +6,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
 library.add(fas)
 
-const ThemeProps = tuple('primary', 'default', 'danger', 'link')
+const ThemeProps = tuple('primary', 'default', 'danger')
 export type ThemeProp = typeof ThemeProps[number]
 
 export interface IconProps extends FontAwesomeIconProps {
@@ -14,11 +14,11 @@ export interface IconProps extends FontAwesomeIconProps {
 }
 
 const Icon: React.FC<IconProps> = (props) => {
-  const { className, theme, ...restProps } = props
+  const { className, theme, ...resetProps } = props
   const classes = classNames('vc-icon', className, {
     [`icon-${theme}`]: theme
   })
-  return <FontAwesomeIcon className={classes} {...restProps} />
+  return <FontAwesomeIcon className={classes} {...resetProps} />
 }
 
 export default Icon

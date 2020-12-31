@@ -36,6 +36,8 @@ module.exports = {
     '@typescript-eslint/no-var-requires': ['off'],
     '@typescript-eslint/no-unused-vars': ['error'],
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': ['error']
+    '@typescript-eslint/no-use-before-define': ['error'],
+    "@typescript-eslint/explicit-function-return-type": ['off'],
+    "@typescript-eslint/explicit-module-boundary-types": ['off'],
   }
 }

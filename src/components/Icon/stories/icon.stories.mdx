@@ -1,7 +1,7 @@
 import { Meta,Story, Preview, Props, Title, Subtitle } from "@storybook/addon-docs/blocks"
-import Icon from "../../Icon"
+import Icon from '../../Icon'
 import Demo from './Demo'
-import "./demo.scss"
+import "./demo.less"
 
 <Meta title="基础/图标 Iconfont" component={Icon} />
 
@@ -24,7 +24,7 @@ import "./demo.scss"
 <Preview>
   <div className="icon-demo-list">
     <div className="icon-item">
-      <Icon icon="address-book"/>
+      <Icon icon="address-book" />
       address-book
     </div>
     <div className="icon-item">
@@ -37,8 +37,8 @@ import "./demo.scss"
 ### 动画图标
 使用spin该类可旋转任何图标，pulse类用八个步骤来旋转Icon
 <Preview>
-  <Icon icon="circle-notch" spin/>
-  <Icon icon="spinner" pulse />
+  <Icon icon="circle-notch" size='2x' spin/>
+  <Icon icon="spinner" size='2x' pulse />
 </Preview>
 
 ### API
